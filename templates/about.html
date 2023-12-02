@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+
+{% block title %}
+about page
+{% endblock %}
+
+{% block stylecss %}
+<style>
+    footer {
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    #navbar {
+        background: lightslategray;
+    }
+
+    #logo {
+        font-size: 36px;
+        font-weight: 550;
+        letter-spacing: 5px;
+        color: black;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 5px;
+    }
+
+    #logo span {
+        color: #ffa500;
+    }
+
+    .navbar-toggler span {
+        color: #ffa500;
+    }
+
+    .navbar-nav {
+        margin-left: 20px;
+    }
+
+    .nav-item .nav-link {
+        font-size: 16px;
+        font-weight: 550;
+        color: black;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        transition: 0.5s ease;
+    }
+
+    .nav-item .nav-link:hover {
+        background: #ffa500;
+        color: white;
+    }
+
+    #navbar form button {
+        background: orange;
+        color: white;
+        border: none;
+    }
+
+
+
+
+    .input_search {
+        font-size: 16px;
+        font-weight: 550;
+        color: black;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        transition: 0.5s ease;
+    }
+
+    .search input[type=text] {
+        border: none;
+    }
+
+    .search {
+        float: right;
+        margin: 7px;
+        padding: auto;
+        /* margin-bottom: 5px; */
+    }
+
+    .search button {
+        /* background-color: #0074D9;
+            color: #f2f2f2;
+            float: right; */
+        padding: 5px 10px;
+        margin-right: 16px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .slidecontainer {
+        width: 100%;
+    }
+
+    .slider {
+        width: 90%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .3s;
+        transition: opacity .3s;
+    }
+
+    .slider:hover {
+        opacity: 2;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 60%;
+        background: #04AA6D;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #04AA6D;
+        cursor: pointer;
+    }
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+<section id="about" class="" py-5>
+    <div class="container">
+        <h1><b>About Our Project</b></h1>
+        <br>
+        <article class="about-entry">
+            <h3>Historical Timeline Web Application</h3>
+            <p> As Part of the Database Management System assignment we developed an responsive web application.this
+                project working is when user clicks
+                an Year then corresponding years important histoical events will be fetched from wikipedia api
+                our dedicated team including 4 members <span>Ajayjith ,Sarthak Raj , Rishal T , Jacob George</span>
+                Thank you for choosing us . we looking forward to improvements
+            </p>
+            <p>
+                Best Regards,
+                -Team WikiTime
+            </p>
+        </article>
+    </div>
+</section>
+<section id="Contact US" class="py-5">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="messageTextarea">Message</label>
+                <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+<footer class="text-muted py-5">
+    <div class="container">
+
+    </div>
+</footer>
+
+
+{% endblock %}

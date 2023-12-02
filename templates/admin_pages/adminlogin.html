@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Admin page
+{% endblock %}
+
+{% block stylecss %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        /* margin: 0;
+        padding: 0; */
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #events-container {
+        margin: 6px;
+    }
+
+    .event {
+        background-color: white;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    buttons {
+        cursor: pointer;
+        height:50%;
+        width:50px;
+    }
+</style>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1 style="color: goldenrod">Welcome to Admin Dashboard</h1>
+
+
+<div>
+    <button onclick="" class="buttons">Create an event</button>
+    <button onclick="" class="buttons">Delete an event</button>
+    <button onclick="" class="buttons">Update an event</button>
+    
+</div>
+<!-- <script>
+    const eventsContainer = document.getElementById('events-container');
+
+    // Sample data (replace this with data from your database)
+    const eventsData = [
+        { id: 1, title: 'Event 1', date: '2023-01-01' },
+        { id: 2, title: 'Event 2', date: '2023-02-15' },
+        { id: 3, title: 'Event 3', date: '2023-03-30' }
+    ];
+
+    // Function to render events
+    function renderEvents() {
+        eventsContainer.innerHTML = '';
+
+        eventsData.forEach(event => {
+            const eventElement = document.createElement('div');
+            eventElement.classList.add('event');
+            eventElement.innerHTML = `
+                <div>
+                    <h3>${event.title}</h3>
+                    <p>Date: ${event.date}</p>
+                </div>
+                // <div>
+                //     <button onclick="deleteEvent(${event.id})">Delete an event</button>
+                //     <button onclick="updateEvent(${event.id})">Update an event</button>
+                //     <button onclick="createEvent(${event.id})">Create an event</button>
+                // </div>
+            `;
+            eventsContainer.appendChild(eventElement);
+        });
+    }
+
+    // Function to delete an event
+    function deleteEvent(eventId) {
+        // Implement your delete logic here
+        eventsData.splice(eventsData.findIndex(event => event.id === eventId), 1);
+        renderEvents();
+    }
+
+    function createEvent(eventId) {
+        eventsData.splice(events)
+    }
+
+    // Function to update an event
+    function updateEvent(eventId) {
+        // Implement your update logic here
+        const updatedTitle = prompt('Enter updated title:');
+        if (updatedTitle) {
+            const eventToUpdate = eventsData.find(event => event.id === eventId);
+            eventToUpdate.title = updatedTitle;
+            renderEvents();
+        }
+    }
+
+    // Render events on page load
+    renderEvents();
+</script> -->
+
+{% endblock %}
